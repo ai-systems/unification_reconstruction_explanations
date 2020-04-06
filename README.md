@@ -4,7 +4,9 @@ This repository contains the code used for the paper [Unification-based Reconstr
 
 ## Code to reproduce results
 We have released the code (`experiment.py`) to reproduce the results obtained on the [Worldtree explanation reconstruction task](https://github.com/umanlp/tg2019task) by our best model (RS BM25 + US BM25).
-**Example Usage:** `python ./experiment.py`
+
+**Run the experiment:** `python ./experiment.py`
+
 **Compute the Mean Average Precision (MAP) score:** `./evaluate.py --gold=./data/questions/dev.tsv prediction.txt`
 
 ### Bibtex
