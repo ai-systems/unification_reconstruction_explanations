@@ -2,15 +2,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_distances
 from nltk.corpus import stopwords
 import numpy as np
-from nltk.corpus import wordnet
-from nltk import word_tokenize, pos_tag
-from tqdm import tqdm
-from regra.ranker.utils import Utils
-import spacy
 
 class TFIDF: 
  
-    def fit(self, utils, corpus, question_train, ids, question_train_ids): 
+    def fit(self, corpus, question_train, ids, question_train_ids): 
         self.corpus = corpus
         self.ids = ids 
         self.question_ids = question_train_ids 
@@ -23,8 +18,7 @@ class TFIDF:
         self.vectorizer_questions = TfidfVectorizer(stop_words = self.stopWords).fit(self.joined_corpus + self.question_train) 
         self.transformed_corpus = self.vectorizer.transform(self.joined_corpus)
         self.transformed_corpus_questions = self.vectorizer_questions.transform(self.question_train)
-        self.utils = utils
-        
+
     def query(self, query):    
         ordered_ids = []
         scores = []

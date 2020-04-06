@@ -8,11 +8,6 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.feature_extraction.text import _document_frequency
 from sklearn.utils.validation import check_is_fitted
 from sklearn.metrics.pairwise import cosine_distances
-from nltk.corpus import stopwords
-from nltk.corpus import wordnet
-from nltk import word_tokenize, pos_tag
-from tqdm import tqdm
-from regra.ranker.utils import Utils
 from sklearn import pipeline, feature_extraction, metrics
 import spacy
 import warnings
@@ -132,11 +127,10 @@ class BM25Vectorizer(feature_extraction.text.TfidfVectorizer):
 
 class BM25: 
  
-    def fit(self, utils, corpus, question_train, ids, question_train_ids): 
+    def fit(self, corpus, question_train, ids, question_train_ids): 
         self.corpus = corpus
         self.ids = ids 
         self.question_ids = question_train_ids 
-        self.stopWords = stopwords.words('english')
         self.joined_corpus = []
         self.question_train = question_train
         for fact in corpus:
@@ -145,7 +139,6 @@ class BM25:
         self.vectorizer_questions = BM25Vectorizer().fit(self.joined_corpus + self.question_train) 
         self.transformed_corpus = self.vectorizer.transform(self.joined_corpus)
         self.transformed_corpus_questions = self.vectorizer_questions.transform(self.question_train)
-        self.utils = utils
         
     def query(self, query):    
         ordered_ids = []

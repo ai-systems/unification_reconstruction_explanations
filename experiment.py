@@ -73,8 +73,8 @@ for q_id, exp in tqdm(eb_dataset_train.items()):
     question_train.append(lemmatized_question)
     q_ids.append(q_id)
 
-f_retriever.fit(utils, corpus, question_train, ids, q_ids)  
-q_retriever.fit(utils, corpus, question_train, ids, q_ids)  
+f_retriever.fit(corpus, question_train, ids, q_ids)  
+q_retriever.fit(corpus, question_train, ids, q_ids)  
 
 #compute the explanation ranking for each question
 for q_id, exp in tqdm(eb_dataset.items()):
