@@ -15,9 +15,13 @@ This repository contains the code used for the paper [Unification-based Reconstr
 
 We have released the code (`experiment.py`) to reproduce the results obtained on the [Worldtree explanation reconstruction task](https://github.com/umanlp/tg2019task) by our best joint model (Relevance Score BM25 + Unification Score BM25).
 
-**Running the experiment:** `python ./experiment.py`
+**Run the experiment:**
 
-**Computing the Mean Average Precision (MAP) score:** `./evaluate.py --gold=./data/questions/dev.tsv prediction.txt`
+`python ./experiment.py`
+
+**Compute the Mean Average Precision (MAP) score:** 
+
+`./evaluate.py --gold=./data/questions/dev.tsv prediction.txt`
 
 ### Bibtex
 If you use this paper in your work, please cite [Unification-based Reconstruction of Explanations for Science Questions](https://arxiv.org/abs/2004.00061):
