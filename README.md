@@ -10,9 +10,9 @@ The following findings are presented: (1) The proposed approach achieves competi
 (3) The constructed explanations can support downstream models for answer prediction, 
 improving the accuracy of BERT for multiple choices QA on both ARC easy (+6.92%) and challenge (+15.69%) questions.
 
+## Code to reproduce results
 This repository contains the code used for the paper [Unification-based Reconstruction of Explanations for Science Questions](https://arxiv.org/abs/2004.00061).
 
-## Code to reproduce results
 We have released the code (`experiment.py`) to reproduce the results obtained on the [Worldtree explanation reconstruction task](https://github.com/umanlp/tg2019task) by our best joint model (Relevance Score BM25 + Unification Score BM25).
 
 **Running the experiment:** `python ./experiment.py`
