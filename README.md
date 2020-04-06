@@ -1,6 +1,6 @@
 # Unification-based Reconstruction of Explanations for Science Questions
 
-###### Abstract
+## Abstract
 The paper presents a framework to reconstruct explanations for multiple choice science questions through explanation-centred corpora. 
 Building upon the notion of unification in science, the framework ranks explanatory facts with respect to question and candidate answer by leveraging a combination of two different scores: 
 (a) A Relevance Score (RS) that represents the extent to which a given fact is specific to the question; (b) A Unification Score (US) that takes into account the explanatory power of a fact, 
