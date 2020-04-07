@@ -24,7 +24,7 @@ We have released the code (`experiment.py`) to reproduce the results obtained on
 `./evaluate.py --gold=./data/questions/dev.tsv prediction.txt`
 
 ### Bibtex
-If you use this  in your work, please cite [Unification-based Reconstruction of Explanations for Science Questions](https://arxiv.org/abs/2004.00061):
+If you use this paper in your work, please cite [Unification-based Reconstruction of Explanations for Science Questions](https://arxiv.org/abs/2004.00061):
 
 ```
 @article{valentino2020unification,
@@ -32,4 +32,5 @@ If you use this  in your work, please cite [Unification-based Reconstruction of 
   author={Valentino, Marco and Thayaparan, Mokanarangan and Freitas, Andr{\'e}},
   journal={arXiv preprint arXiv:2004.00061},
   year={2020}
+}
 ```
