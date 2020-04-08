@@ -8,7 +8,7 @@ determined according to its frequency in explanations for similar questions. An 
 The following findings are presented: (1) The proposed approach achieves competitive results when compared to state-of-the-art Transformers, yet possessing the property of being scalable to large explanatory knowledge bases;
 (2) The combined model significantly outperforms IR baselines (+7.8/8.4 MAP), confirming the complementary aspects of relevance and unification score; 
 (3) The constructed explanations can support downstream models for answer prediction, 
-improving the accuracy of BERT for multiple choices QA on both ARC easy (+6.92%) and challenge (+15.69%) questions.
+improving the accuracy of BERT for multiple choice QA on both ARC easy (+6.92%) and challenge (+15.69%) questions.
 
 ## Code to reproduce the results
 This repository contains the code used for the paper [Unification-based Reconstruction of Explanations for Science Questions](https://arxiv.org/abs/2004.00061).
