@@ -8,7 +8,7 @@ An extensive evaluation is performed on the Worldtree corpus, integrating k-NN c
 ## Code to reproduce the results
 This repository contains the code used for the paper [Unification-based Reconstruction of Multi-hop Explanations for Science Questions](https://arxiv.org/abs/2004.00061) accepted at EACL 2021.
 
-Here you can find the code (`experiment.py`) to reproduce the results obtained on the 2019 [Worldtree explanation regeneration task](https://github.com/umanlp/tg2019task) by our best joint model (Relevance Score BM25 + Unification Score BM25).
+Here, you can find the code (`experiment.py`) to reproduce the results obtained on the 2019 [Worldtree explanation regeneration task](https://github.com/umanlp/tg2019task) by our best joint model (Relevance Score BM25 + Unification Score BM25).
 
 **Run the experiment:**
 
