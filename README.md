@@ -1,19 +1,14 @@
-# Unification-based Reconstruction of Explanations for Science Questions
+# Unification-based Reconstruction of Multi-hop Explanations for Science Questions
 
 ## Abstract
-The paper presents a framework to reconstruct explanations for multiple choice science questions through explanation-centred corpora. 
-Building upon the notion of unification in science, the framework ranks explanatory facts with respect to question and candidate answer by leveraging a combination of two different scores: 
-(a) A Relevance Score (RS) that represents the extent to which a given fact is specific to the question; (b) A Unification Score (US) that takes into account the explanatory power of a fact, 
-determined according to its frequency in explanations for similar questions. An extensive evaluation of the framework is performed on the Worldtree corpus, adopting IR weighting schemes for its implementation.
-The following findings are presented: (1) The proposed approach achieves competitive results when compared to state-of-the-art Transformers, yet possessing the property of being scalable to large explanatory knowledge bases;
-(2) The combined model significantly outperforms IR baselines (+7.8/8.4 MAP), confirming the complementary aspects of relevance and unification score; 
-(3) The constructed explanations can support downstream models for answer prediction, 
-improving the accuracy of BERT for multiple choice QA on both ARC easy (+6.92%) and challenge (+15.69%) questions.
+This paper presents a novel framework for reconstructing multi-hop explanations in science Question Answering (QA). While existing approaches for multi-hop reasoning build explanations considering each question in isolation, we propose a method to leverage explanatory patterns emerging in a corpus of scientific explanations. Specifically, the framework ranks a set of atomic facts by integrating lexical relevance with the notion of unification power, estimated analysing explanations for similar questions in the corpus. 
+
+An extensive evaluation is performed on the Worldtree corpus, integrating k-NN clustering and Information Retrieval (IR) techniques. We present the following conclusions: (1) The proposed method achieves results competitive with Transformers, yet being orders of magnitude faster, a feature that makes it scalable to large explanatory corpora (2) The unification-based mechanism has a key role in reducing semantic drift, contributing to the reconstruction of many hops explanations (6 or more facts) and the ranking of complex inference facts (+12.0 Mean Average Precision) (3) Crucially, the constructed explanations can support downstream QA models, improving the accuracy of BERT by up to 10% overall.
 
 ## Code to reproduce the results
-This repository contains the code used for the paper [Unification-based Reconstruction of Explanations for Science Questions](https://arxiv.org/abs/2004.00061).
+This repository contains the code used for the paper [Unification-based Reconstruction of Multi-hop Explanations for Science Questions](https://arxiv.org/abs/2004.00061) accepted at EACL 2021.
 
-We have released the code (`experiment.py`) to reproduce the results obtained on the [Worldtree explanation reconstruction task](https://github.com/umanlp/tg2019task) by our best joint model (Relevance Score BM25 + Unification Score BM25).
+We have released the code (`experiment.py`) to reproduce the results obtained on the 2019 [Worldtree explanation regeneration task](https://github.com/umanlp/tg2019task) by our best joint model (Relevance Score BM25 + Unification Score BM25).
 
 **Run the experiment:**
 
@@ -24,7 +19,7 @@ We have released the code (`experiment.py`) to reproduce the results obtained on
 `./evaluate.py --gold=./data/questions/dev.tsv prediction.txt`
 
 ### Bibtex
-If you use this paper in your work, please cite [Unification-based Reconstruction of Explanations for Science Questions](https://arxiv.org/abs/2004.00061):
+If you use this paper in your work, please cite [Unification-based Reconstruction of Multi-hop Explanations for Science Questions](https://arxiv.org/abs/2004.00061):
 
 ```
 @article{valentino2020unification,
