@@ -19,7 +19,7 @@ Here, you can find the code (`experiment.py`) to reproduce the results obtained 
 `./evaluate.py --gold=./data/questions/dev.tsv prediction.txt`
 
 ### Bibtex
-If you use this paper in your work, please cite our paper:
+If you use the unification-based reconstruction in your work, please consider citing our paper:
 
 ```
 @article{valentino2020unification,
