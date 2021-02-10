@@ -18,6 +18,8 @@ Here, you can find the code (`experiment.py`) to reproduce the results obtained 
 
 `./evaluate.py --gold=./data/questions/dev.tsv prediction.txt`
 
+Please contact us for any issues at: marco.valentino@manchester.ac.uk
+
 ### Bibtex
 If you use this paper in your work, please cite [Unification-based Reconstruction of Multi-hop Explanations for Science Questions](https://arxiv.org/abs/2004.00061):
 
