@@ -1,0 +1,8 @@
+msgpack == 0.5.6
+nltk == 3.4.5
+numpy == 1.18.1
+pandas == 0.25.3
+scikit_learn == 0.22.2.post1
+scipy == 1.5.2
+spacy == 2.2.4
+tqdm == 4.50.2
