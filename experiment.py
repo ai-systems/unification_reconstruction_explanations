@@ -26,7 +26,7 @@ pred_q = open("prediction.txt", "w")
 
 # Parameters
 K = 5000  # relevance facts limit
-Q = 80  # similar questions limit
+Q = 100  # similar questions limit
 QK = 85  # unification facts limit
 weights = [0.83, 0.17]  # relevance and unification score weigths
 eb_dataset = eb_dataset_dev  # test dataset
