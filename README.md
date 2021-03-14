@@ -1,4 +1,4 @@
-# Unification-based Reconstruction of Multi-hop Explanations for Science Questions
+# Unification-based Reconstruction of Multi-hop Explanations for Science Questions (EACL 2021)
 
 ## Abstract
 This paper presents a novel framework for reconstructing multi-hop explanations in science Question Answering (QA). While existing approaches for multi-hop reasoning build explanations considering each question in isolation, we propose a method to leverage explanatory patterns emerging in a corpus of scientific explanations. Specifically, the framework ranks a set of atomic facts by integrating lexical relevance with the notion of unification power, estimated analysing explanations for similar questions in the corpus. 
