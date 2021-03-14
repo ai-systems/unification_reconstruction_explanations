@@ -23,7 +23,7 @@ If you use the unification-based reconstruction in your work, please consider ci
 
 ```
 @article{valentino2020unification,
-  title={Unification-based Reconstruction of Explanations for Science Questions},
+  title={Unification-based Reconstruction of Multi-hop Explanations for Science Questions},
   author={Valentino, Marco and Thayaparan, Mokanarangan and Freitas, Andr{\'e}},
   journal={arXiv preprint arXiv:2004.00061},
   year={2020}
