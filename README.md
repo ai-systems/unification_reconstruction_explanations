@@ -18,6 +18,8 @@ Here, you can find the code (`experiment.py`) to reproduce the results obtained 
 
 `./evaluate.py --gold=./data/questions/dev.tsv prediction.txt`
 
+This command will evaluate the explanation ranking stored in `prediction.txt` and produce a MAP score of 54.55.
+
 ### Bibtex
 If you use the unification-based reconstruction in your work, please consider citing our paper:
 
