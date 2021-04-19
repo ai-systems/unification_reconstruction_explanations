@@ -6,7 +6,7 @@ This paper presents a novel framework for reconstructing multi-hop explanations 
 An extensive evaluation is performed on the Worldtree corpus, integrating k-NN clustering and Information Retrieval (IR) techniques. We present the following conclusions: (1) The proposed method achieves results competitive with Transformers, yet being orders of magnitude faster, a feature that makes it scalable to large explanatory corpora (2) The unification-based mechanism has a key role in reducing semantic drift, contributing to the reconstruction of many hops explanations (6 or more facts) and the ranking of complex inference facts (+12.0 Mean Average Precision) (3) Crucially, the constructed explanations can support downstream QA models, improving the accuracy of BERT by up to 10% overall.
 
 ## Reproducibility
-This repository contains the code used for the paper [Unification-based Reconstruction of Multi-hop Explanations for Science Questions](https://arxiv.org/abs/2004.00061) accepted at [EACL 2021](https://2021.eacl.org/).
+This repository contains the code used for the paper [Unification-based Reconstruction of Multi-hop Explanations for Science Questions](https://www.aclweb.org/anthology/2021.eacl-main.15/) accepted at [EACL 2021](https://www.aclweb.org/anthology/volumes/2021.eacl-main/).
 
 Here, you can find the code (`experiment.py`) to reproduce the results obtained on the 2019 [Worldtree explanation regeneration task](https://github.com/umanlp/tg2019task) by our best joint model (Relevance Score BM25 + Unification Score BM25).
 
