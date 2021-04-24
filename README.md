@@ -24,19 +24,12 @@ This command evaluates the explanation ranking stored in `prediction.txt` and sh
 If you use the unification-based reconstruction in your work, please consider citing our paper:
 
 ```
-@inproceedings{valentino-etal-2021-unification,
-    title = "Unification-based Reconstruction of Multi-hop Explanations for Science Questions",
-    author = "Valentino, Marco  and
-      Thayaparan, Mokanarangan  and
-      Freitas, Andr{\'e}",
-    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
-    month = apr,
-    year = "2021",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://www.aclweb.org/anthology/2021.eacl-main.15",
-    pages = "200--211",
-    abstract = "This paper presents a novel framework for reconstructing multi-hop explanations in science Question Answering (QA). While existing approaches for multi-hop reasoning build explanations considering each question in isolation, we propose a method to leverage explanatory patterns emerging in a corpus of scientific explanations. Specifically, the framework ranks a set of atomic facts by integrating lexical relevance with the notion of unification power, estimated analysing explanations for similar questions in the corpus. An extensive evaluation is performed on the Worldtree corpus, integrating k-NN clustering and Information Retrieval (IR) techniques. We present the following conclusions: (1) The proposed method achieves results competitive with Transformers, yet being orders of magnitude faster, a feature that makes it scalable to large explanatory corpora (2) The unification-based mechanism has a key role in reducing semantic drift, contributing to the reconstruction of many hops explanations (6 or more facts) and the ranking of complex inference facts (+12.0 Mean Average Precision) (3) Crucially, the constructed explanations can support downstream QA models, improving the accuracy of BERT by up to 10{\%} overall.",
+@inproceedings{valentino2021unification,
+  title={Unification-based Reconstruction of Multi-hop Explanations for Science Questions},
+  author={Valentino, Marco and Thayaparan, Mokanarangan and Freitas, Andr{\'e}},
+  booktitle={Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume},
+  pages={200--211},
+  year={2021}
 }
 ```
 
